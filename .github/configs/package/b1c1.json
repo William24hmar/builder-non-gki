@@ -3,9 +3,9 @@
     "kernelSource": {
       "device": "Spacewar",
       "vendor": "nothing",
-      "name": "sukisu-ultra-susfs-159",
+      "name": "sukisu",
       "defconfig": "gki_defconfig",
-      "extraConfig": "vendor/lahaina-qgki_defconfig",
+      "extraConfig": "",
       "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
