@@ -6,7 +6,7 @@
       "name": "sukisu-ultra-susfs-159",
       "defconfig": "b1c1_defconfig",
       "extraConfig": "vendor/lahaina_QGKI.config",
-      "repo": "https://https://github.com/nyxalune/kernel_nothing_sm7325",
+      "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
     "output_image": "Image.lz4-dtb",
