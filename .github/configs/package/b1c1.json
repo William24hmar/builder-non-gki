@@ -64,7 +64,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/zerofrip/AnyKernel3/tree/master",
+      "repo": "https://github.com/William24hmar/AnyKernel3",
       "branch": "spacewar_los"
     }
   }
