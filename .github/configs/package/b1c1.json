@@ -3,23 +3,23 @@
     "kernelSource": {
       "device": "Spacewar",
       "vendor": "nothing",
-      "name": "sukisu",
+      "name": "sukisu-ultra",
       "defconfig": "gki_defconfig",
       "extraConfig": "vendor/lahaina-qgki_defconfig/lahaina_QGKI.config",
       "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
-    "output_image": "Image.lz4-dtb",
-    "use_python2": true,
+    "output_image": "Image",
+    "use_python2": false,
     "kp": {
       "use": false,
       "kpimg_link": ""
     },
     "kernelsu": {
       "enable": true,
-      "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/KernelSU-Next/refs/heads/next/kernel/setup.sh",
-      "setupArg": "next",
-      "setupName": "KernelSU-Next",
+      "setupLink": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
+      "setupArg": "susfs-main",
+      "setupName": "KernelSU",
       "needPatch": false,
       "susfsLink": ""
     },
@@ -64,8 +64,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/kernel-build-from-rainyland/AnyKernel3",
-      "branch": "b1c1"
+      "repo": "https://github.com/zerofrip/AnyKernel3/tree/master",
+      "branch": "spacewar_los"
     }
   }
 ]
