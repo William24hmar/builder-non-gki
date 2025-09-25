@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "device": "ziti",
-      "vendor": "oneplus",
-      "name": "sukisu-ultra-susfs-159",
-      "defconfig": "ziti_defconfig",
+      "device": "Spacewar",
+      "vendor": "nothing",
+      "name": "sukisu-ultra",
+      "defconfig": "vendor/lahaina-qgki_defconfig",
       "extraConfig": "",
-      "repo": "https://github.com/kernel-build-from-rainyland/kernel_oneplus_sm7325",
-      "branch": "susfs-159"
+      "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
+      "branch": "lineage-22.2"
     },
     "output_image": "Image",
     "use_python2": false,
@@ -25,7 +25,7 @@
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/RainyXeon/clang-r563880.git",
+        "repo": "https://gitlab.com/RainyXeon/clang-r547379",
         "branch": "main",
         "name": "clang-AOSP",
         "binPath": ["/bin"]
@@ -58,14 +58,14 @@
       }
     },
     "image": {
-      "use": true,
-      "imageUrl": "https://github.com/kernel-build-from-rainyland/builder-non-gki/releases/download/cloud/oneplus-ziti-original-boot.img"
+      "use": false,
+      "imageUrl": ""
     },
     "AnyKernel3": {
       "use": false,
       "release": true,
-      "repo": "https://github.com/kernel-build-from-rainyland/AnyKernel3",
-      "branch": "ziti"
+      "repo": "https://github.com/William24hmar/AnyKernel3",
+      "branch": "spacewar_los"
     }
   }
 ]
