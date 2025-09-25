@@ -5,7 +5,7 @@
       "vendor": "nothing",
       "name": "sukisu-ultra",
       "defconfig": "vendor/lahaina-qgki_defconfig",
-      "extraConfig": "",
+      "extraConfig": "vendor/lahaina_QGKI.config",
       "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
@@ -35,8 +35,8 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang-AOSP/bin/clang",
-      "KCFLAGS": "-Wno-error=strict-prototypes -Wno-implicit-int",
-      "build_out": "Image",
+      "KCFLAGS": "-O2",
+      "build_out": "Image.gz-dtb",
       "externalCommand": {
         "KBUILD_BUILD_HOST": "perfc.org",
         "KBUILD_BUILD_USER": "rainyxeon",
