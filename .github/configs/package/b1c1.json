@@ -6,8 +6,8 @@
       "name": "sukisu-ultra",
       "defconfig": "vendor/lahaina-qgki_defconfig",
       "extraConfig": "",
-      "repo": "https://github.com/adityayyy/kernel_nothing_sm7325",
-      "branch": "15.2"
+      "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
+      "branch": "lineage-22.2"
     },
     "output_image": "Image",
     "use_python2": false,
