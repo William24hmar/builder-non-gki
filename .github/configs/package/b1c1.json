@@ -4,10 +4,10 @@
       "device": "Spacewar",
       "vendor": "nothing",
       "name": "sukisu-ultra",
-      "defconfig": "vendor/lahaina-qgki_defconfig",
-      "extraConfig": "",
-      "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
-      "branch": "lineage-22.2"
+      "defconfig": "gki_defconfig",
+      "extraConfig": "vendor/lahaina-qgki_defconfig/lahaina_QGKI.config/lahaina_GKI.config",
+      "repo": "https://github.com/adityayyy/kernel_nothing_sm7325",
+      "branch": "15.2"
     },
     "output_image": "Image",
     "use_python2": false,
