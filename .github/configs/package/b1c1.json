@@ -4,8 +4,8 @@
       "device": "Spacewar",
       "vendor": "nothing",
       "name": "sukisu-ultra",
-      "defconfig": "vendor/lahaina-qgki_defconfig",
-      "extraConfig": "",
+      "defconfig": "gki_defconfig",
+      "extraConfig": "vendor/lahaina-qgki_defconfig",
       "repo": "https://github.com/adityayyy/kernel_nothing_sm7325",
       "branch": "15.2"
     },
