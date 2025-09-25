@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "device": "b1c1",
-      "vendor": "google",
-      "name": "ksun-susfs-159",
+      "device": "Spacewar",
+      "vendor": "nothing",
+      "name": "sukisu-ultra-susfs-159",
       "defconfig": "b1c1_defconfig",
-      "extraConfig": "vendor/kernelsu.config",
-      "repo": "https://github.com/kernel-build-from-rainyland/kernel_google_b1c1",
-      "branch": "vic-testing"
+      "extraConfig": "vendor/lahaina_QGKI.config",
+      "repo": "https://https://github.com/nyxalune/kernel_nothing_sm7325",
+      "branch": "lineage-22.2"
     },
     "output_image": "Image.lz4-dtb",
     "use_python2": true,
