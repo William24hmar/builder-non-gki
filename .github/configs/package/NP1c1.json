@@ -28,8 +28,7 @@
       "repo": "https://gitlab.com/RainyXeon/clang-r547379",
       "branch": "master",
       "name": "clang-AOSP",
-      "binPath": ["/bin"
-      },
+      "binPath": ["/bin"]
       {
         "repo": "https://github.com/William24hmar/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3.git",
         "branch": "lineage-22.2",
