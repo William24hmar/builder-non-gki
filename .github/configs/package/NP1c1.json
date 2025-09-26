@@ -5,7 +5,7 @@
     "name": "bimasakti-sukisu",
     "defconfig": "vendor/lahaina-qgki_defconfig",
     "extraConfig": "",
-    "repo": "https://github.com/William24hmar/kernel_nothing_sm7325", 
+    "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
     "branch": "lineage-22.2"
   },
   "output_image": "Image.gz-dtb",
@@ -18,7 +18,7 @@
     "enable": true,
     "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/SukiSU-Ultra/main/kernel/setup.sh",
     "setupArg": "susfs-revert",
-    "setupName": "KernelSU", 
+    "setupName": "KernelSU",
     "needPatch": false,
     "susfsLink": ""
   },
@@ -39,19 +39,24 @@
       "KBUILD_BUILD_USER": "rainyxeon",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "LD": "ld.lld", 
+      "LD": "ld.lld",
       "LLVM": "1",
       "LLVM_IAS": "1",
       "AR": "llvm-ar",
       "NM": "llvm-nm",
       "OBJCOPY": "llvm-objcopy",
       "OBJDUMP": "llvm-objdump",
-      "STRIP": "llvm-strip"
+      "READELF": "llvm-readelf",
+      "OBJSIZE": "llvm-size",
+      "STRIP": "llvm-strip",
+      "LDGOLD": "aarch64-linux-gnu-ld.gold",
+      "LLVM_AR": "llvm-ar",
+      "LLVM_DIS": "llvm-dis"
     }
   },
   "image": {
     "use": true,
-    "imageUrl": "YOUR_ORIGINAL_BOOT_IMG_URL_HERE"
+    "imageUrl": "https://example.com/original-boot.img"  // Replace with actual URL
   },
   "AnyKernel3": {
     "use": false,
