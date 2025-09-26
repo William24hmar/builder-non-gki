@@ -5,20 +5,20 @@
       "vendor": "nothing",
       "name": "sukisu-ultra",
       "defconfig": "vendor/lahaina-qgki_defconfig",
-      "extraConfig": "vendor/lahaina_QGKI.config",
-      "repo": "https://github.com/William24hmar/android_kernel_nothing_sm7325",
+      "extraConfig": "",
+      "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
     "output_image": "Image",
     "use_python2": false,
     "kp": {
       "use": false,
-      "kpimg_link": "https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/kpimg"
+      "kpimg_link": ""
     },
     "kernelsu": {
       "enable": true,
       "setupLink": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
-      "setupArg": "susfs-main",
+      "setupArg": "main",
       "setupName": "KernelSU",
       "needPatch": false,
       "susfsLink": ""
