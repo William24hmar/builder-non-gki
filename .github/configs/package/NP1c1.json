@@ -25,9 +25,9 @@
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/RainyXeon/clang-r547379",
-        "branch": "master",
-        "name": "clang-AOSP",
+        "repo": "git@gitlab.com:alphadroid-project/prebuilts_clang_host_linux-x86_clang-r547379.git",
+        "branch": "alpha-15.2",
+        "name": "prebuilts_clang_host_linux-x86_clang-r547379",
         "binPath": ["/bin"]
       }
     ],
