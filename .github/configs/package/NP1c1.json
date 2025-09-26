@@ -55,8 +55,8 @@
     }
   },
   "image": {
-    "use": true,
-    "imageUrl": "https://example.com/original-boot.img"  // Replace with actual URL
+    "use": false,
+    "imageUrl": ""
   },
   "AnyKernel3": {
     "use": false,
