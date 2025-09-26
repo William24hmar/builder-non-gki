@@ -31,7 +31,6 @@
         "binPath": ["/bin"]
       },
       {
-      {
         "repo": "https://gitlab.com/williamhmar24/r547379.git",
         "branch": "master",
         "name": "clang-AOSP",
