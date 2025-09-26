@@ -29,11 +29,6 @@
       "branch": "master",
       "name": "clang-AOSP",
       "binPath": ["/bin"]
-      {
-        "repo": "https://github.com/William24hmar/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3.git",
-        "branch": "lineage-22.2",
-        "name": "toolchain/aarch64-linux-android-9.3",
-        "binPath": ["/bin"]
       }
     ],
     "ccache": true,
