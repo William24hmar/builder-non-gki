@@ -27,7 +27,7 @@
       {
         "repo": "https://gitlab.com/williamhmar24/r547379.git",
         "branch": "master",
-        "name": "prebuilts_clang_host_linux-x86_clang-r547379",
+        "name": "clang-AOSP",
         "binPath": ["/bin"]
       }
     ],
