@@ -31,16 +31,16 @@
       "binPath": ["/bin"]
       }
     ],
-    "ccache": true,
-"params": {
-  "ARCH": "arm64",
-  "CC": "aarch64-linux-gnu-gcc",
-  "externalCommand": {
-    "KBUILD_BUILD_HOST": "perfc.org",
-    "KBUILD_BUILD_USER": "rainyxeon",
-    "CROSS_COMPILE": "aarch64-linux-gnu-",
-    "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
-     }
+    "ccache": false,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "aarch64-linux-gnu-gcc",
+      "externalCommand": {
+        "KBUILD_BUILD_HOST" "perfc.org",
+        "KBUILD_BUILD_USER": "rainyxeon",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
+      }
     },
     "image": {
       "use": false,
