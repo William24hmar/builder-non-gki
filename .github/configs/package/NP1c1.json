@@ -35,8 +35,8 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang-AOSP/bin/clang",
-      "KCFLAGS": "-O2",
-      "build_out": "Image.gz-dtb",
+      "KCFLAGS": "-Wno-error=strict-prototypes -Wno-implicit-int",
+      "build_out": "Image",
       "externalCommand": {
         "KBUILD_BUILD_HOST": "perfc.org",
         "KBUILD_BUILD_USER": "rainyxeon",
