@@ -3,27 +3,34 @@
     "kernelSource": {
       "device": "Spacewar",
       "vendor": "nothing",
-      "name": "sukisu-ultra",
+      "name": "bimasakti-sukisu",
       "defconfig": "vendor/lahaina-qgki_defconfig",
       "extraConfig": "",
       "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
       "branch": "derp16"
     },
-    "output_image": "Image",
-    "use_python2": false,
+    "output_image": "Image.gz-dtb",
+    "use_python2": true,
     "kp": {
-      "use": false,
-      "kpimg_link": ""
+      "use": true,
+      "kpimg_link": "https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/kpimg"
     },
     "kernelsu": {
       "enable": true,
-      "setupLink": "https://github.com/SukiSU-Ultra/SukiSU-Ultra/blob/nongki/kernel/setup.sh",
-      "setupArg": "nongki",
+      "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/SukiSU-Ultra/main/kernel/setup.sh",
+      "setupArg": "susfs-revert",
       "setupName": "KernelSU",
       "needPatch": false,
       "susfsLink": ""
     },
     "toolchains": [
+      {
+        "repo": "https://gitlab.com/kutemeikito/rastamod69-clang",
+        "branch": "clang-20.0",
+        "name": "toolchain/clang-AOSP",
+        "binPath": ["/bin"]
+      },
+      {
       {
         "repo": "https://gitlab.com/williamhmar24/r547379.git",
         "branch": "master",
@@ -34,19 +41,23 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "clang-AOSP/bin/clang",
-        "CROSS_COMPILE": "clang-AOSP/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang-AOSP/bin/arm-linux-gnueabi-",
-        "LD": "clang-AOSP/bin/ld.lld",
-        "LLVM": "1",
-        "LLVM_IAS": "1",
-        "AR": "clang-AOSP/bin/llvm-ar",
-        "NM": "clang-AOSP/bin/llvm-nm",
-        "OBJCOPY": "clang-AOSP/bin/llvm-objcopy",
-        "OBJDUMP": "clang-AOSP/bin/llvm-objdump",
-        "READELF": "clang-AOSP/bin/llvm-readelf",
-        "STRIP": "clang-AOSP/bin/llvm-strip",
-        "PATH": "$PWD/clang-AOSP/bin:$PATH"
+      "CC": "toolchain/clang-AOSP/bin/clang",
+      "KCFLAGS": "-O2",
+      "build_out": "Image.gz-dtb dtbo.img",
+      "externalCommand": {
+        "KBUILD_BUILD_HOST": "perfc.org",
+        "KBUILD_BUILD_USER": "rainyxeon",
+        "CC": "toolchain/clang-AOSP/bin/clang",
+        "LD": "toolchain/clang-AOSP/bin/ld.lld",
+        "AR": "toolchain/clang-AOSP/bin/llvm-ar",
+        "AS": "toolchain/clang-AOSP/bin/llvm-as",
+        "NM": "toolchain/clang-AOSP/bin/llvm-nm",
+        "OBJCOPY": "toolchain/clang-AOSP/bin/llvm-objcopy",
+        "OBJDUMP": "toolchain/clang-AOSP/bin/llvm-objdump",
+        "STRIP": "toolchain/clang-AOSP/bin/llvm-strip",
+        "CROSS_COMPILE": "toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_COMPAT": "toolchain/clang-AOSP/bin/arm-linux-androideabi-",
+        "CLANG_TRIPLE": "toolchain/clang-AOSP/bin/aarch64-linux-gnu-"
       }
     },
     "image": {
@@ -58,6 +69,6 @@
       "release": true,
       "repo": "https://github.com/William24hmar/AnyKernel3",
       "branch": "spacewar_los"
-    }
+      }
   }
 ]
