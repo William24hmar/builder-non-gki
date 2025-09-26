@@ -6,7 +6,7 @@
       "name": "sukisu-ultra",
       "defconfig": "vendor/lahaina-qgki_defconfig",
       "extraConfig": "vendor/lahaina_QGKI.config",
-      "repo": "https://github.com/nyxalune/kernel_nothing_sm7325",
+      "repo": "https://github.com/LineageOS/android_kernel_nothing_sm7325",
       "branch": "lineage-22.2"
     },
     "output_image": "Image",
