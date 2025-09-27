@@ -11,7 +11,7 @@
     "output_image": "Image.gz-dtb",
     "use_python2": true,
     "kp": {"use": false},
-    "kernelsu": {"enable": false},  // Disable SukiSU for first test
+    "kernelsu": "false",
     "toolchains": [],
     "ccache": true,
     "params": {
