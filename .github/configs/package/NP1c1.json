@@ -9,7 +9,7 @@
       "repo": "https://github.com/William24hmar/android_kernel_nothing_sm7325",
       "branch": "uvite"
     },
-    "output_image": "Image.gz-dtb",
+    "output_image": "",
     "use_python2": false,
     "kp": {
       "use": false,
