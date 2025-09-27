@@ -20,7 +20,7 @@
       "setupLink": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
       "setupArg": "nongki",
       "setupName": "KernelSU",
-      "needPatch": false,
+      "needPatch": True,
       "susfsLink": ""
     },
     "toolchains": [
