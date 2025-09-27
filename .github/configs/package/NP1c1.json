@@ -1,67 +1,28 @@
-{
-  "kernelSource": {
-    "device": "Spacewar",
-    "vendor": "nothing",
-    "name": "bimasakti-sukisu",
-    "defconfig": "vendor/lahaina-qgki_defconfig",
-    "extraConfig": "",
-    "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
-    "branch": "lineage-22.2"
-  },
-  "output_image": "Image.gz-dtb",
-  "use_python2": true,
-  "kp": {
-    "use": false,
-    "kpimg_link": ""
-  },
-  "kernelsu": {
-    "enable": true,
-    "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/SukiSU-Ultra/main/kernel/setup.sh",
-    "setupArg": "susfs-revert",
-    "setupName": "KernelSU",
-    "needPatch": false,
-    "susfsLink": ""
-  },
-  "toolchains": [
-    {
-      "repo": "https://gitlab.com/RainyXeon/clang-r547379",
-      "branch": "master",
-      "name": "clang-AOSP",
-      "binPath": ["bin"]
-    }
-  ],
-  "ccache": true,
-  "params": {
-    "ARCH": "arm64",
-    "CC": "clang",
-    "externalCommand": {
-      "KBUILD_BUILD_HOST": "perfc.org",
-      "KBUILD_BUILD_USER": "rainyxeon",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "LD": "ld.lld",
-      "LLVM": "1",
-      "LLVM_IAS": "1",
-      "AR": "llvm-ar",
-      "NM": "llvm-nm",
-      "OBJCOPY": "llvm-objcopy",
-      "OBJDUMP": "llvm-objdump",
-      "READELF": "llvm-readelf",
-      "OBJSIZE": "llvm-size",
-      "STRIP": "llvm-strip",
-      "LDGOLD": "aarch64-linux-gnu-ld.gold",
-      "LLVM_AR": "llvm-ar",
-      "LLVM_DIS": "llvm-dis"
-    }
-  },
-  "image": {
-    "use": false,
-    "imageUrl": ""
-  },
-  "AnyKernel3": {
-    "use": false,
-    "release": true,
-    "repo": "https://github.com/William24hmar/AnyKernel3",
-    "branch": "spacewar_los"
+[
+  {
+    "kernelSource": {
+      "device": "Spacewar",
+      "vendor": "nothing",
+      "name": "bimasakti-sukisu",
+      "defconfig": "vendor/lahaina-qgki_defconfig",
+      "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
+      "branch": "lineage-22.2"
+    },
+    "output_image": "Image.gz-dtb",
+    "use_python2": true,
+    "kp": {"use": false},
+    "kernelsu": {"enable": false},  // Disable SukiSU for first test
+    "toolchains": [],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "aarch64-linux-gnu-gcc",
+      "externalCommand": {
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
+      }
+    },
+    "image": {"use": false},
+    "AnyKernel3": {"use": false}
   }
-}
+]
