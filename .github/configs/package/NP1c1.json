@@ -3,26 +3,66 @@
     "kernelSource": {
       "device": "Spacewar",
       "vendor": "nothing",
-      "name": "bimasakti-sukisu",
-      "defconfig": "vendor/lahaina-qgki_defconfig",
-      "repo": "https://github.com/William24hmar/kernel_nothing_sm7325",
-      "branch": "lineage-22.2"
+      "name": "sukisu-ultra",
+      "defconfig": "phone1_defconfig",
+      "extraConfig": "",
+      "repo": "https://github.com/William24hmar/android_kernel_nothing_sm7325",
+      "branch": "vauxite"
     },
     "output_image": "Image.gz-dtb",
-    "use_python2": true,
-    "kp": {"use": false},
-    "kernelsu": "false",
-    "toolchains": [],
+    "kp": {
+      "use": false,
+      "kpimg_link": ""
+    },
+    "kernelsu": {
+      "enable": true,
+      "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/SukiSU-Ultra/main/kernel/setup.sh",
+      "setupArg": "susfs-revert",
+      "setupName": "KernelSU",
+      "needPatch": false,
+      "susfsLink": ""
+    },
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/PixelOS-Devices/playgroundtc.git",
+        "branch": "15",
+        "name": "clang-playground",
+        "binPath": ["/bin"]
+      }
+    ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "aarch64-linux-gnu-gcc",
+      "CC": "clang-playground/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
+        "KBUILD_BUILD_HOST": "perfc.org",
+        "KBUILD_BUILD_USER": "rainyxeon",
+        "CROSS_COMPILE": "clang-playground/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang-playground/bin/arm-linux-gnueabi-",
+        "LD": "clang-playground/bin/ld.lld",
+        "LLVM": "1",
+        "LLVM_IAS": "1",
+        "AR": "clang-playground/bin/llvm-ar",
+        "NM": "clang-playground/bin/llvm-nm",
+        "OBJCOPY": "clang-playground/bin/llvm-objcopy",
+        "OBJDUMP": "clang-playground/bin/llvm-objdump",
+        "READELF": "clang-playground/bin/llvm-readelf",
+        "OBJSIZE": "clang-playground/bin/llvm-size",
+        "STRIP": "clang-playground/bin/llvm-strip",
+        "LDGOLD": "clang-playground/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "clang-playground/bin/llvm-ar",
+        "LLVM_DIS": "clang-playground/bin/llvm-dis"
       }
     },
-    "image": {"use": false},
-    "AnyKernel3": {"use": false}
+    "image": {
+      "use": false,
+      "imageUrl": ""
+    },
+    "AnyKernel3": {
+      "use": false,
+      "release": true,
+      "repo": "https://github.com/William24hmar/AnyKernel3",
+      "branch": "spacewar_los"
+    }
   }
 ]
