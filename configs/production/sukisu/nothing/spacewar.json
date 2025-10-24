@@ -4,36 +4,43 @@
       "device": "spacewar",
       "vendor": "nothing",
       "name": "sukisu",
-      "defconfig": "spacewar_defconfig",
-      "extraConfig": "",
-      "repo": "https://github.com/kernel-build-from-rainyland/Spacewar_NOS3.0_Kernel",
-      "branch": "sm7325/v/mr"
+      "repo": "https://github.com/William24hmar/android_kernel_msm-5.4_nothing_sm7325",
+      "branch": "sm7325/v/mr",
+      "defconfig": "gki_defconfig",
+      "extraConfig": "vendor/lahaina_GKI.config vendor/lahaina_QGKI.config"
     },
+
     "output_image": "Image",
     "use_python2": false,
+
     "additional_script_link": "https://github.com/kernel-build-from-rainyland/builder-non-gki/raw/main/scripts/global-version.sh",
     "additional_post_script_link": "https://github.com/kernel-build-from-rainyland/builder-non-gki/raw/main/scripts/spacewar_post_build.sh",
+
     "kp": {
       "use": true,
       "kpimg_link": "https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/kpimg"
     },
+
     "kernelsu": {
       "enable": true,
-      "setupLink": "https://raw.githubusercontent.com/kernel-build-from-rainyland/SukiSU-Ultra/main/kernel/setup.sh",
-      "setupArg": "susfs-legacy",
-      "setupName": "KernelSU",
+      "setupLink": "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh",
+      "setupArg": "nongki",
+      "setupName": "SukiSU-Ultra",
       "needPatch": false,
       "susfsLink": ""
     },
+
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform//prebuilts/clang/host/linux-x86/+archive/4c6fbc28d3b078a5308894fc175f962bb26a5718/clang-r383902b1.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/4c6fbc28d3b078a5308894fc175f962bb26a5718/clang-r383902b1.tar.gz",
         "branch": "14.0",
         "name": "clang-AOSP",
         "binPath": ["/bin"]
       }
     ],
+
     "ccache": false,
+
     "params": {
       "ARCH": "arm64",
       "CC": "clang-AOSP/bin/clang",
@@ -41,7 +48,7 @@
       "build_out": "Image",
       "externalCommand": {
         "KBUILD_BUILD_HOST": "deepinrain.github.ci",
-        "KBUILD_BUILD_USER": "rainyxeon",
+        "KBUILD_BUILD_USER": "willay",
         "CROSS_COMPILE": "clang-AOSP/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "clang-AOSP/bin/arm-linux-gnueabi-",
         "LD": "clang-AOSP/bin/ld.lld",
@@ -59,10 +66,12 @@
         "LLVM_DIS": "clang-AOSP/bin/llvm-dis"
       }
     },
+
     "image": {
       "use": false,
       "imageUrl": ""
     },
+
     "AnyKernel3": {
       "use": true,
       "release": true,
